@@ -1,8 +1,11 @@
 # rasa-chat-bot
 
 ## Sample commands 
+
 conda info --envs
+
 conda create -n rasa python=3.7
+
 conda activate rasa
 pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
 python -m spacy download en_core_web_md
