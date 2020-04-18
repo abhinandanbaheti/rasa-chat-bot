@@ -1,5 +1,6 @@
 # rasa-chat-bot
 
+## Sample commands 
 conda info --envs
 conda create -n rasa python=3.7
 conda activate rasa
