@@ -37,6 +37,11 @@ ujson==1.35
 
 tensorflow==2.1.0
 
+### Train and Test NLU Model
+rasa train nlu
+
+rasa shell nlu
+
 ### To run Action Server (Custom Actions endpoints)
 rasa run actions
 
