@@ -9,6 +9,8 @@ conda activate rasa
 
 pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
 
+pip install rasa[spacy]==1.9.5
+
 python -m spacy download en_core_web_md
 
 python -m spacy link en_core_web_md en
