@@ -1,0 +1,92 @@
+actions:
+- action_search_restaurants
+- action_send_email
+- action_verify_city_tier
+- utter_ask_cuisine
+- utter_ask_email_id
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_price_range
+- utter_default
+- utter_goodbye
+- utter_greet
+- utter_unknown_location
+entities:
+- cuisine
+- cusine
+- emailid
+- location
+- people
+- price
+intents:
+- others
+- restaurant_search
+- affirm
+- send_email
+- greet
+- stop
+- goodbye
+responses:
+  utter_ask_cuisine:
+  - buttons:
+    - payload: chinese
+      title: Chinese
+    - payload: mexican
+      title: Mexican
+    - payload: italian
+      title: Italian
+    - payload: american
+      title: American
+    - payload: south indian
+      title: South Indian
+    - payload: north indian
+      title: North Indian
+    text: what kind of cuisine would you like?
+  utter_ask_email_id:
+  - text: Please provide your email id, if you want me to send these results to your
+      email?
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_location:
+  - text: In what location?
+  - text: which location are you looking for ?
+  - text: can you please help me with the location ?
+  utter_ask_price_range:
+  - buttons:
+    - payload: Lesser than Rs. 300
+      title: Lesser than Rs. 300
+    - payload: Rs. 300 to 700
+      title: Rs. 300 to 700
+    - payload: More than 700
+      title: More than 700
+    text: What's the average budget for two people?
+  utter_default:
+  - text: I cannot understand
+  - text: I am afraid, I can't help you
+  - text: I can only find the restaurants.
+  utter_goodbye:
+  - text: ok byee
+  - text: goodbye :)
+  - text: Bye-bye
+  - text: Bon Appetit!
+  utter_greet:
+  - text: hey there! How may i help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  utter_unknown_location:
+  - text: Sorry, we don’t operate in this city. Can you please specify some other
+      location ?
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
+slots:
+  cuisine:
+    type: text
+  emailid:
+    type: text
+  location:
+    type: text
+  people:
+    type: text
+  price:
+    type: text
