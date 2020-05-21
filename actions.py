@@ -174,13 +174,13 @@ class ActionSendEmail(Action):
     
     def run(self, dispatcher, tracker, domain):
         print("In ActionSendEmail class :")
-        from_user = 'dummyrasa@gmail.com'
+        from_user = 'dumsa@gmail.com'
         to_user = tracker.get_slot('emailid')
         if to_user is None:
             dispatcher.utter_message(template="utter_ask_email_id")
             return []
         dispatcher.utter_message("Sending email to {}".format(to_user))
-        password = 'DummyRasa@123'
+        password = 'Dumsa@123'
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login(from_user, password)
